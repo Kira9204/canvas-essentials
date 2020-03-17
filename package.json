@@ -1,0 +1,37 @@
+{
+  "name": "canvas-essentials",
+  "version": "0.0.1",
+  "description": "A small helper library to make browser canvas interactions more pleasant",
+  "main": "dist/index.js",
+  "types": "dist/ts/index.d.ts",
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "tslint": "tslint './src/**/*.{ts,tsx}'",
+    "tslint:fix": "npm run tslint -- --fix",
+    "tslint:check": "tslint-config-prettier-check ./tslint.json",
+    "prettier": "prettier --write --config ./.prettierrc.js **/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kira9204/canvas-essentials.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kira9204/canvas-essentials/issues"
+  },
+  "homepage": "https://github.com/Kira9204/canvas-essentials",
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.2",
+    "ts-loader": "^6.2.1",
+    "ts-node": "^8.6.2",
+    "tslint": "^6.1.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.2.0",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
